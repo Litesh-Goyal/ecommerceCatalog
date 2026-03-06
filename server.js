@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Routes
 app.use("/api/products", require("./routes/productRoutes"));
-app.get("/", (req, res) => res.send("Server is listening to apis");
+app.get("/", (req, res) => res.send("Server is listening to apis"));
 
 // Port (IMPORTANT for Render)
 const PORT = process.env.PORT || 8000;
